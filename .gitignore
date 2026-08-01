@@ -1,0 +1,41 @@
+# Gradle / Android build outputs
+.gradle/
+build/
+**/build/
+.externalNativeBuild/
+**/.externalNativeBuild/
+.cxx/
+**/.cxx/
+captures/
+app/release/
+**/app/release/
+*.apk
+*.aab
+*.ap_
+
+# Local config
+local.properties
+/local.properties
+
+# IDE files
+.idea/
+.vscode/
+.vs/
+*.iml
+.kotlin/
+
+# Logs and OS files
+*.log
+.DS_Store
+
+# Keystore
+*.jks
+*.keystore
+
+CLAUDE.md
+
+do/
+# Added by code-review-graph
+.code-review-graph/
+.codegraph/
+sandboxText/

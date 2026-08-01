@@ -1,0 +1,165 @@
+package com.kail.location.data
+
+/**
+ * 预设运营商数据
+ * 来源：Nrfr项目
+ */
+object PresetCarriers {
+    
+    data class CarrierPreset(
+        val name: String,        // 本地名称
+        val displayName: String, // 英文显示名
+        val region: String       // 地区代码
+    )
+
+    val presets = listOf(
+        // ===== 中国大陆 =====
+        CarrierPreset("中国移动", "China Mobile", "CN"),
+        CarrierPreset("中国联通", "China Unicom", "CN"),
+        CarrierPreset("中国电信", "China Telecom", "CN"),
+
+        // ===== 中国香港 =====
+        CarrierPreset("中国移动香港", "CMHK", "HK"),
+        CarrierPreset("香港电讯", "HKT", "HK"),
+        CarrierPreset("3香港", "3HK", "HK"),
+        CarrierPreset("SmarTone", "SmarTone", "HK"),
+
+        // ===== 中国澳门 =====
+        CarrierPreset("澳门电讯", "CTM", "MO"),
+        CarrierPreset("3澳门", "3 Macau", "MO"),
+
+        // ===== 中国台湾 =====
+        CarrierPreset("中华电信", "Chunghwa Telecom", "TW"),
+        CarrierPreset("台湾大哥大", "Taiwan Mobile", "TW"),
+        CarrierPreset("远传电信", "FarEasTone", "TW"),
+
+        // ===== 日本 =====
+        CarrierPreset("NTT docomo", "NTT docomo", "JP"),
+        CarrierPreset("au", "au by KDDI", "JP"),
+        CarrierPreset("Softbank", "Softbank", "JP"),
+        CarrierPreset("Rakuten", "Rakuten Mobile", "JP"),
+
+        // ===== 韩国 =====
+        CarrierPreset("SK Telecom", "SK Telecom", "KR"),
+        CarrierPreset("KT", "KT Corporation", "KR"),
+        CarrierPreset("LG U+", "LG U+", "KR"),
+
+        // ===== 美国 =====
+        CarrierPreset("AT&T", "AT&T", "US"),
+        CarrierPreset("T-Mobile", "T-Mobile USA", "US"),
+        CarrierPreset("Verizon", "Verizon", "US"),
+        CarrierPreset("Sprint", "Sprint", "US"),
+
+        // ===== 英国 =====
+        CarrierPreset("EE", "EE", "GB"),
+        CarrierPreset("O2", "O2 UK", "GB"),
+        CarrierPreset("Three", "Three UK", "GB"),
+        CarrierPreset("Vodafone", "Vodafone UK", "GB"),
+
+        // ===== 新加坡 =====
+        CarrierPreset("Singtel", "Singtel", "SG"),
+        CarrierPreset("StarHub", "StarHub", "SG"),
+        CarrierPreset("M1", "M1", "SG"),
+
+        // ===== 马来西亚 =====
+        CarrierPreset("Maxis", "Maxis", "MY"),
+        CarrierPreset("Celcom", "Celcom", "MY"),
+        CarrierPreset("Digi", "Digi", "MY"),
+        CarrierPreset("U Mobile", "U Mobile", "MY"),
+
+        // ===== 泰国 =====
+        CarrierPreset("AIS", "AIS", "TH"),
+        CarrierPreset("DTAC", "DTAC", "TH"),
+        CarrierPreset("True Move H", "True Move H", "TH"),
+
+        // ===== 越南 =====
+        CarrierPreset("Viettel", "Viettel Mobile", "VN"),
+        CarrierPreset("Vinaphone", "Vinaphone", "VN"),
+        CarrierPreset("Mobifone", "Mobifone", "VN"),
+
+        // ===== 印度尼西亚 =====
+        CarrierPreset("Telkomsel", "Telkomsel", "ID"),
+        CarrierPreset("Indosat", "Indosat Ooredoo", "ID"),
+        CarrierPreset("XL Axiata", "XL Axiata", "ID"),
+
+        // ===== 菲律宾 =====
+        CarrierPreset("Globe", "Globe Telecom", "PH"),
+        CarrierPreset("Smart", "Smart Communications", "PH"),
+        CarrierPreset("DITO", "DITO Telecommunity", "PH"),
+
+        // ===== 印度 =====
+        CarrierPreset("Jio", "Reliance Jio", "IN"),
+        CarrierPreset("Airtel", "Bharti Airtel", "IN"),
+        CarrierPreset("Vi", "Vodafone Idea", "IN"),
+
+        // ===== 澳大利亚 =====
+        CarrierPreset("Telstra", "Telstra", "AU"),
+        CarrierPreset("Optus", "Optus", "AU"),
+        CarrierPreset("Vodafone", "Vodafone AU", "AU"),
+
+        // ===== 加拿大 =====
+        CarrierPreset("Bell", "Bell Mobility", "CA"),
+        CarrierPreset("Rogers", "Rogers Wireless", "CA"),
+        CarrierPreset("Telus", "Telus Mobility", "CA"),
+
+        // ===== 德国 =====
+        CarrierPreset("Telekom", "T-Mobile DE", "DE"),
+        CarrierPreset("Vodafone", "Vodafone DE", "DE"),
+        CarrierPreset("O2", "O2 DE", "DE"),
+
+        // ===== 法国 =====
+        CarrierPreset("Orange", "Orange FR", "FR"),
+        CarrierPreset("SFR", "SFR", "FR"),
+        CarrierPreset("Free", "Free Mobile", "FR"),
+        CarrierPreset("Bouygues", "Bouygues Telecom", "FR"),
+
+        // ===== 意大利 =====
+        CarrierPreset("TIM", "Telecom Italia", "IT"),
+        CarrierPreset("Vodafone", "Vodafone IT", "IT"),
+        CarrierPreset("Wind Tre", "Wind Tre", "IT"),
+
+        // ===== 西班牙 =====
+        CarrierPreset("Movistar", "Movistar", "ES"),
+        CarrierPreset("Vodafone", "Vodafone ES", "ES"),
+        CarrierPreset("Orange", "Orange ES", "ES"),
+
+        // ===== 俄罗斯 =====
+        CarrierPreset("MTS", "MTS", "RU"),
+        CarrierPreset("MegaFon", "MegaFon", "RU"),
+        CarrierPreset("Beeline", "Beeline", "RU"),
+
+        // ===== 巴西 =====
+        CarrierPreset("Vivo", "Vivo", "BR"),
+        CarrierPreset("Claro", "Claro", "BR"),
+        CarrierPreset("TIM", "TIM Brasil", "BR"),
+
+        // ===== 自定义选项 =====
+        CarrierPreset("自定义", "", "")
+    )
+
+    /**
+     * 按地区分组获取运营商
+     */
+    fun getByRegion(region: String): List<CarrierPreset> {
+        return presets.filter { it.region == region }
+    }
+
+    /**
+     * 获取所有地区代码
+     */
+    fun getRegions(): List<String> {
+        return presets.map { it.region }.filter { it.isNotEmpty() }.distinct()
+    }
+
+    /**
+     * 搜索运营商
+     */
+    fun search(query: String): List<CarrierPreset> {
+        val lowerQuery = query.lowercase()
+        return presets.filter { 
+            it.name.lowercase().contains(lowerQuery) ||
+            it.displayName.lowercase().contains(lowerQuery) ||
+            it.region.lowercase().contains(lowerQuery)
+        }
+    }
+}
